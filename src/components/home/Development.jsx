@@ -21,7 +21,7 @@ const Development = () => {
   };
 
   return (
-    <div className="flex md:py-20 py-10">
+    <div className="flex justify-center md:py-20 py-10">
       <div className="max-w-[1900px] w-full flex flex-col items-center md:gap-10 gap-4 relative">
         <div className="w-[90%] font-outfit flex justify-center lg:text-8xl md:text-6xl sm:text-4xl text-3xl text-heading font-bold">
           <div className="text-left md:w-[60%] w-[80%]">

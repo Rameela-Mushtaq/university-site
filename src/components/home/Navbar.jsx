@@ -84,7 +84,7 @@ const Navbar = () => {
                   {item.icon && <span className="text-xl">{item.icon}</span>}
                 </div>
                 {item.dropdown && openDropdown === index && (
-                  <div className="absolute top-1/2 translate-x-1/2 right-24 mt-12 w-auto p-5 flex flex-col gap-6 text-lg font-normal whitespace-nowrap bg-[#EEE8DF] text-[#170F49] border">
+                  <div className="absolute z-40 top-1/2 translate-x-1/2 right-24 mt-12 w-auto p-5 flex flex-col gap-6 text-lg font-normal whitespace-nowrap bg-[#EEE8DF] text-[#170F49] border">
                     {item.dropdown.map((subItem, subIndex) => (
                       <div key={subIndex}>{subItem.label}</div>
                     ))}

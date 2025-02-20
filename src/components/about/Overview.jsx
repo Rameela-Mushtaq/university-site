@@ -12,15 +12,16 @@ const Overview = () => {
         <div className="flex md:flex-row flex-col-reverse md:gap-12 gap-8 items-center">
           {/* left side */}
           <div className="md:w-[40%] flex">
-            {OverviewImages[0].members.map((image, index) => (
+            <img src="/images/over1.png" alt="over1" />
+            {/* {OverviewImages[0].members.map((image, index) => (
               <img
                 key={index}
                 src={image}
                 alt={`User ${index + 1}`}
-                className="-ml-[71%]  first:ml-0 "
+                className="-ml-[84%]  first:ml-0 "
                 style={{ zIndex: OverviewImages[0].members.length - index }}
               />
-            ))}
+            ))} */}
           </div>
 
           {/* right side */}

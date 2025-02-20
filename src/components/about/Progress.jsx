@@ -40,9 +40,9 @@ const Progress = () => {
         {/* Vector 2 */}
         <div className="flex justify-center items-center">
           <div className="flex flex-col gap-6 w-[30%]">
-          <div className="relative flex">
+          <div className="relative flex w-fit">
               <Vector color={activeStep === 1 ? "#00A4BB" : "#8C8C8C"} />
-              <div className="absolute top-1/2 left-[18%] transform -translate-x-1/2 -translate-y-1/2 font-bold text-[64px] text-white">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-[64px] text-white">
                 02
               </div>
             </div>
@@ -60,9 +60,9 @@ const Progress = () => {
 
         {/* Vector 1 */}
         <div className="flex flex-col gap-6 w-[30%] absolute top-[10%]">
-        <div className="relative flex">
+        <div className="relative flex w-fit">
               <Vector color={activeStep === 0 ? "#00A4BB" : "#8C8C8C"} />
-              <div className="absolute top-1/2 left-[18%] transform -translate-x-1/2 -translate-y-1/2 font-bold text-[64px] text-white">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-[64px] text-white">
                 01
               </div>
             </div>
@@ -80,9 +80,9 @@ const Progress = () => {
         {/* Vector 3 */}
         <div className="flex justify-end items-end -mt-20">
           <div className="flex flex-col gap-6 w-[30%]">
-            <div className="relative flex">
+            <div className="relative flex w-fit">
               <Vector color={activeStep === 2 ? "#00A4BB" : "#8C8C8C"} />
-              <div className="absolute top-1/2 left-[18%] transform -translate-x-1/2 -translate-y-1/2 font-bold text-[64px] text-white">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-[64px] text-white">
                 03
               </div>
             </div>
@@ -98,19 +98,19 @@ const Progress = () => {
           </div>
         </div>
 
-        <div className="absolute xl:left-[12%] lg:left-[18%] xl:top-0 lg:top-[10%] md:left-[20%] md:top-[6%]">
+        <div className="absolute xl:left-[16%] lg:left-[18%] xl:top-[3%] lg:top-[10%] md:left-[20%] md:top-[6%]">
           <img
             src="/images/path.png"
             alt="path"
-            className="xl:h-full xl:w-full lg:w-[300px] md:w-[200px]"
+            className="xl:h-full xl:w-[320px] lg:w-[300px] md:w-[200px]"
           />
         </div>
 
-        <div className="absolute xl:right-[20%] lg:right-[15%] xl:top-[28%] lg:top-[35%] md:right-[14%] md:top-[30%]">
+        <div className="absolute xl:right-[22%] lg:right-[15%] xl:top-[32%] lg:top-[35%] md:right-[14%] md:top-[30%]">
           <img
             src="/images/path.png"
             alt="path"
-            className="xl:h-full xl:w-full lg:w-[300px] md:w-[200px]"
+            className="xl:h-full xl:w-[320px] lg:w-[300px] md:w-[200px]"
           />
         </div>
       </div>

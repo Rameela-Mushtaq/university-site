@@ -15,9 +15,9 @@ const Focus = () => {
             {FocusData.map((item, index) => (
               <div key={index} className="flex flex-col gap-4 md:p-4 relative">
                 {/* Conditionally render the image if it exists */}
-                <div className="border-2 border-[#A06C2E] rounded-lg overflow-hidden">
+                <div className=" rounded-lg overflow-hidden">
                 {item.image && (
-                  <img src={item.image} alt="Focus"  className="rounded-lg  transition-transform duration-300 hover:scale-110"/>
+                  <img src={item.image} alt="Focus"  className="rounded-lg border-2 w-full border-[#A06C2E]  transition-transform duration-300 hover:scale-110"/>
                 )} 
                 </div>
 
@@ -75,8 +75,8 @@ const Focus = () => {
             </div>
 
             <div className="flex flex-col gap-6 relative">
-              <div className="border-2 border-[#A06C2E] rounded-lg overflow-hidden">
-              <img src="/images/focus1.png" alt="focus" className="rounded-lg  transition-transform duration-300 hover:scale-110"/>
+              <div className=" rounded-lg overflow-hidden">
+              <img src="/images/focus1.png" alt="focus" className="rounded-lg border-2 border-[#A06C2E] w-full  transition-transform duration-300 hover:scale-110"/>
               </div>
               <img
                 src="/images/focus.png"
