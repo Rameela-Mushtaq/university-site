@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
       <div className="bg-navBg md:py-6 py-4">
         <div className="max-w-[1900px] w-[90%] mx-auto flex justify-between gap-4">
-          <div className="flex items-center">
+          <a href="/placement" className="flex items-center">
             <Image
               src="/images/logo.png"
               alt="logo"
@@ -60,7 +60,7 @@ const Navbar = () => {
               height={64}
               className="lg:w-auto w-[150px]"
             />
-          </div>
+          </a>
 
           {/*  (Hamburger Icon) */}
           <div className="lg:hidden flex items-center">
