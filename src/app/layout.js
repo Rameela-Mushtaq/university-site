@@ -1,15 +1,40 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local';
+import { Outfit } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const proximaNova = localFont({
+  src: [
+    {
+      path: './fonts/Proxima Nova Thin.otf',
+      weight: '100',
+    },
+    {
+      path: './fonts/ProximaNova-Regular.otf',
+      weight: '400',
+    },
+    {
+      path: './fonts/Proxima Nova Semibold.otf',
+      weight: '600',
+    },
+    {
+      path: './fonts/Proxima Nova Bold.otf',
+      weight: '700',
+    },
+    {
+      path: './fonts/Proxima Nova Extrabold.otf',
+      weight: '800',
+    },
+  ]
+
+}) 
+
+const outfit = Outfit({
+  subsets: ["latin"], // Include necessary subsets
+  weight: ["300", "400", "500", "600", "700"], // Specify the weights you need
+  variable: "--font-outfit" // CSS variable for global styling
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata = {
   title: "Create Next App",
@@ -18,10 +43,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${proximaNova.variable} ${outfit.variable}`}>
+      <body className={proximaNova.className}>
         {children}
       </body>
     </html>
