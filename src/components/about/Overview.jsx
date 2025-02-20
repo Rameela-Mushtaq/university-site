@@ -1,4 +1,5 @@
-"use client";
+'use client';
+
 import React from "react";
 import Heading from "../shared/Heading";
 import { OverviewData, OverviewImages } from "@/constants/data";
@@ -12,16 +13,27 @@ const Overview = () => {
         <div className="flex md:flex-row flex-col-reverse md:gap-12 gap-8 items-center">
           {/* left side */}
           <div className="md:w-[40%] flex">
-            <img src="/images/over1.png" alt="over1" />
-            {/* {OverviewImages[0].members.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`User ${index + 1}`}
-                className="-ml-[84%]  first:ml-0 "
-                style={{ zIndex: OverviewImages[0].members.length - index }}
-              />
-            ))} */}
+            <div className="relative md:w-[400px] w-[250px] lg:h-[450px] md:h-[350px] h-[270px]">
+              {OverviewImages.map((item, index) => (
+                <div key={index} className={`card card-${index + 1} bg-[#A4DBE5] relative w-full lg:h-full h-[300px] `}>
+                  <img
+                    src={item.image}
+                    alt="users"
+                    className="w-full lg:h-full md:h-[300px]  object-cover rounded-xl"
+                  />
+                  <div className="absolute w-full lg:top-[65%] md:top-[60%] top-[55%] bg-transparent text-white flex flex-col p-4">
+                    <div className={`overlay px-4 py-2 rounded-lg`}>
+                      <div className="font-bold lg:text-2xl md:text-lg text-base">{item.title}</div>
+                      <div className="md:text-base text-sm font-normal">{item.subtitle}</div>
+                      <div className="flex justify-between">
+                        <div className="font-bold md:text-2xl text-xl">{item.icon}</div>
+                        <div className="font-extrabold lg:text-4xl md:text-2xl text-lg">{item.number}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* right side */}

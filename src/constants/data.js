@@ -711,10 +711,24 @@ export const OverviewData = [
 
 export const OverviewImages = [
   {
-    "members": [
-    "/images/over1.png",
-    "/images/over2.png",
-    "/images/over3.png",
-  ]
+    image: "/images/hero1.png",
+    title: "Aisha Kapoor",
+    subtitle: "B.Tech (CSE)",
+    icon: "Adani",
+    number: "25 "
+  },
+  {
+    image: "/images/hero2.png",
+    title: "Aisha Kapoor",
+    subtitle: "B.Tech (CSE)",
+    icon: "Adani",
+    number: "25 "
+  },
+  {
+    image: "/images/hero3.png",
+    title: "Aisha Kapoor",
+    subtitle: "B.Tech (CSE)",
+    icon: "Adani",
+    number: "25 "
   }
 ]
